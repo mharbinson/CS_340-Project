@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Home Menu</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		<h1>Home Page</h1>
+		
+		<h2>Persons</h2>
+		<div class="HomeContentDivision">
+			<!--dynamically generated list of Persons-->
+			<div class="HomeOverflowList">
+				<table>
+					<thead>
+						<tr>
+							<th>First Name</th> <th>Last Name</th> <th>Dates</th>
+						</tr>
+					</thead>
+					<tbody id="HomePersonsList">
+						<!--rows below are those which will be dynamically populated in the future-->
+						<tr>
+							<td>Demo</td> <td>Person_1</td> <td>1900-1990</td>
+						</tr>
+						<tr>
+							<td>Demo</td> <td>Person_2</td> <td>1950-2015</td>
+						</tr>
+						<tr>
+							<td>Demo</td> <td>Person_3</td> <td>1980-</td>
+						</tr>
+						<tr>
+							<td>Demo</td> <td>Person_4</td> <td>1990-</td>
+						</tr>
+						<tr>
+							<td>Demo</td> <td>Person_5</td> <td>1995-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<!--person filtering form-->
+			<form class="HomeFilteringForm">
+				<fieldset>
+					<legend>Filter By</legend>
+					<label>
+						First Name
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						Last Name
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						<input type="submit" name="" value="Filter">
+					</label>
+				</fieldset>
+			</form>
+			
+			<!--add person form-->
+			<form class="HomeCreationForm">
+				<fieldset>
+					<legend>Create New</legend>
+					<label>
+						First Name
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						Last Name
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						Date of Birth
+						<input type="Date" name="">
+					</label>
+					<br>
+					<label>
+						Date of Death
+						<input type="Date" name="">
+					</label>
+					<br>
+					<label>
+						Biography
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						Photo
+						<input type="file" name="" accept="image/jpeg">
+					</label>
+					<br>
+					<input type="submit" name="" value="add">
+				</fieldset>
+			</form>
+		</div>
+
+		<h2>Places</h2>
+		<div class="HomeContentDivision">
+
+			<!--dynamically generated list of places-->
+			<div class="HomeOverflowList">
+				<table>
+					<thead>
+						<tr>
+							<th>Place Name</th>
+						</tr>
+					</thead>
+					<tbody id="HomePlacesList">
+						<!--rows below are those which will be dynamically populated in the future-->
+						<tr>
+							<td>Port of Entry</td>
+						</tr>
+						<tr>
+							<td>Homestead</td>
+						</tr>
+						<tr>
+							<td>Family Ranch</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<!--place filtering form-->
+			<form class="HomeFilteringForm">
+				<fieldset>
+					<legend>Filter By</legend>
+					<label>
+						Location
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						Description
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						<input type="submit" name="" value="Filter">
+					</label>
+				</fieldset>
+			</form>
+			
+			<!--add place form-->
+			<form class="HomeCreationForm">
+				<fieldset>
+					<legend>Create New</legend>
+					<label>
+						Location
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						Description
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						Photo
+						<input type="file" name="" accept="image/jpeg">
+					</label>
+					<br>
+					<input type="submit" name="" value="add">
+				</fieldset>
+			</form>
+			
+		</div>
+
+		<h2>Events</h2>
+		<div class="HomeContentDivision">
+
+			<!--dynamically generated list of events-->
+			<div class="HomeOverflowList">
+				<table>
+					<thead>
+						<tr class="ListItem">
+							<th>Event Name</th>
+						</tr>
+					</thead>
+					<tbody id="HomeEventsList">
+						<!--rows below are those which will be dynamically populated in the future-->
+						<tr>
+							<td>Oregon Trail Journey</td>
+						</tr>
+						<tr>
+							<td>Person_1 and Person_2 Wedding</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!--event filtering form-->
+			<form class="HomeFilteringForm">
+				<fieldset>
+					<legend>Filter By</legend>
+					<label>
+						Event Name
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						<input type="submit" name="" value="Filter">
+					</label>
+				</fieldset>
+			</form>
+			
+			<!--add event form-->
+			<form class="HomeCreationForm">
+				<fieldset>
+					<legend>Create New</legend>
+					<label>
+						Event Name
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						Narrative
+						<input type="text" name="">
+					</label>
+					<br>
+					<label>
+						Photo
+						<input type="file" name="" accept="image/jpeg">
+					</label>
+					<br>
+					<input type="submit" name="" value="add">
+				</fieldset>
+			</form>
+			
+		</div>
+
+		<!--javascript files-->
+		<script src="list_functions.js"></script>
+		<script src="home_load.js"></script>
+		
+	</body>
+</html>
+

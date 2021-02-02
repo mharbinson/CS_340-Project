@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Person Profile</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		
+		<!--link to return to home page-->
+		<h2><a href="home.html">Home</a></h2>
+
+		<div>
+			<img src="demo_image_1.jpg"></img>
+			<button class="InlineHeadingButton">Delete</button>
+			<p>Here is a description of this image</p>
+		</div>
+
+		<div>
+			<h2 class="InlineHeadingText">Associated Persons</h2>
+			<button class="InlineHeadingButton">Add Link</button>
+			<div class="OverflowList">
+				<table>
+					<thead>
+						<tr>
+							<th>First Name</th> <th>Last Name</th> <th>Dates</th>
+						</tr>
+					</thead>
+					<tbody id="PhotoProfilePersonsList">
+						<!--rows below are those which will be dynamically populated in the future-->
+						<tr>
+							<td>Demo</td> <td>Person_1</td> <td>1900-1990</td> <td><button>Unlink</button></td>
+						</tr>
+						<tr>
+							<td>Demo</td> <td>Person_2</td> <td>1950-2015</td> <td><button>Unlink</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<!--dynamically generated list of Places associated with this Photo-->
+		<div>
+			<h2 class="InlineHeadingText">Associated Places</h2>
+			<button class="InlineHeadingButton">Add Link</button>
+			<div class="OverflowList">
+				<table>
+					<thead>
+						<tr>
+							<th>Location</th>
+							<th>Description</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody id= "PhotoProfilePlacesList">
+						<tr>
+							<td>Grand Canyon</td>
+							<td>Big Canyon</td>
+							<td><button>Unlink</button></td>
+						</tr>
+						<tr>
+							<td>Oregon</td>
+							<td>State</td>
+							<td><button>Unlink</button></td>
+							
+						</tr>
+						<tr>
+							<td>Arizona</td>
+							<td>State</td>
+							<td><button>Unlink</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!--dynamically generated list of Events associated with this Photo-->
+		<div>
+			<h2 class="InlineHeadingText">Associated Events</h2>
+			<button class="InlineHeadingButton">Add Link</button>
+			<div class="OverflowList">
+				<table>
+					<thead>
+						<tr>
+							<th>Event Name</th>
+						</tr>
+					</thead>
+					<tbody id="PhotoProfileEventsList">
+						<!--rows below are those which will be dynamically populated in the future-->
+						<tr>
+							<td>Oregon Trail Journey</td> <td><button>Unlink</button></td>
+						</tr>
+						<tr>
+							<td>Person_1 and Person_2 Wedding</td> <td><button>Unlink</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!--javascript files-->
+		<script src="list_functions.js"></script>
+		<script src="photo_profile_load.js"></script>
+		
+	</body>
+</html>

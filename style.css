@@ -1,0 +1,57 @@
+/* home page stuff */
+
+.HomeContentDivision
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-style: solid;
+	border-width: 4px;	
+}
+
+.HomeOverflowList
+{
+	margin-left: 5px;
+	height: 100px;
+	width: 350px;
+	border-style: solid;
+	border-width: 2px;
+	overflow: scroll;
+	overflow-x: hidden;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.HomeFilteringForm
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.HomeCreationForm
+{
+	margin-top: 10px;
+}
+
+/* other stuff */
+
+.OverflowList
+{
+	height: 100px;
+	width: 350px;
+	border-style: solid;
+	border-width: 2px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.InlineHeadingText
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.InlineHeadingButton
+{
+	vertical-align: middle;	
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Person Profile</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		
+		<!--link to return to home page-->
+		<h2><a href="home.html">Home</a></h2>
+
+		<div>
+			<h1 class="InlineHeadingText">Demo Person</h1>
+			<button class="InlineHeadingButton">Delete</button>
+			<button class="InlineHeadingButton">Update</button>
+			<img id="PersonProfileImage" src="demo_profile_image.jpg" height="300px"></img>
+			<p>Here is some text to describe this person.</p>
+			<p>... And here is another paragraph of text to describe this person.</p>
+		</div>
+
+		<div>
+			<h2 class="InlineHeadingText">Spouses</h2>
+			<button class="InlineHeadingButton">Add Link</button>
+			<div class="OverflowList">
+				<table>
+					<thead>
+						<tr>
+							<th>First Name</th> <th>Last Name</th> <th>Dates</th>
+						</tr>
+					</thead>
+					<tbody id="PersonProfileSpousesList">
+						<!--rows below are those which will be dynamically populated in the future-->
+						<tr>
+							<td>Demo</td> <td>Person_1</td> <td>1900-1990</td> <td><button>Unlink</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div>
+			<h2 class="InlineHeadingText">Children</h2>
+			<button class="InlineHeadingButton">Add Link</button>
+			<div class="OverflowList">
+				<table>
+					<thead>
+						<tr>
+							<th>First Name</th> <th>Last Name</th> <th>Dates</th>
+						</tr>
+					</thead>
+					<tbody id="PersonProfileChildrenList">
+						<!--rows below are those which will be dynamically populated in the future-->
+						<tr>
+							<td>Demo</td> <td>Person_1</td> <td>1900-1990</td> <td><button>Unlink</button></td>
+						</tr>
+						<tr>
+							<td>Demo</td> <td>Person_2</td> <td>1950-2015</td> <td><button>Unlink</button></td>
+						</tr>
+						<tr>
+							<td>Demo</td> <td>Person_3</td> <td>1980-</td> <td><button>Unlink</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div>
+			<h2 class="InlineHeadingText">Parents</h2>
+			<button class="InlineHeadingButton">Add Link</button>
+			<div class="OverflowList">
+				<table>
+					<thead>
+						<tr>
+							<th>First Name</th> <th>Last Name</th> <th>Dates</th>
+						</tr>
+					</thead>
+					<tbody id="PersonProfileParentsList">
+						<!--rows below are those which will be dynamically populated in the future-->
+						<tr>
+							<td>Demo</td> <td>Person_1</td> <td>1900-1990</td> <td><button>Unlink</button></td>
+						</tr>
+						<tr>
+							<td>Demo</td> <td>Person_2</td> <td>1950-2015</td> <td><button>Unlink</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<!--dynamically generated list of Places associated with this Person-->
+		<div>
+			<h2 class="InlineHeadingText">Associated Places</h2>
+			<button class="InlineHeadingButton">Add Link</button>
+			<div class="OverflowList">
+				<table>
+					<thead>
+						<tr>
+							<th>Location</th>
+							<th>Description</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody id= "PersonProfilePlacesList">
+						<tr>
+							<td>Grand Canyon</td>
+							<td>Big Canyon</td>
+							<td><button>Unlink</button></td>
+						</tr>
+						<tr>
+							<td>Oregon</td>
+							<td>State</td>
+							<td><button>Unlink</button></td>
+							
+						</tr>
+						<tr>
+							<td>Arizona</td>
+							<td>State</td>
+							<td><button>Unlink</button></td>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+		</div>
+
+		<!--gallery images-->
+		<div>
+			<h2 class="InlineHeadingText">Images</h2>
+			<button class="InlineHeadingButton">Add Link</button>
+			<p id="PersonProfileGalleryImagesList">
+				<img src="demo_image_1.jpg" height="200px">
+				<img src="demo_image_2.jpg" height="200px">
+				<img src="demo_image_3.jpg" height="200px">
+			</p>
+		</div>
+
+		<!--javascript files-->
+		<script src="list_functions.js"></script>
+		<script src="person_profile_load.js"></script>
+		
+	</body>
+</html>
